@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{7A38498E-C6C6-43DC-8F10-BACD071738C3}|">
+  <MonoDevelop.Ide.ItemProperties.lab3 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="lab3/WebForm1.aspx.cs">
+    <Files>
+      <File FileName="lab3/Global.asax" Line="1" Column="1" />
+      <File FileName="lab3/WebForm1.aspx.cs" Line="10" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="lab3" expanded="True">
+            <Node name="lab3" expanded="True">
+              <Node name="WebForm1.aspx" expanded="True">
+                <Node name="WebForm1.aspx.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
