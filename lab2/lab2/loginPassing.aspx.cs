@@ -19,11 +19,13 @@ namespace lab2
             string name = username.Text;
             string pswd = password.Text;
 
-            Session["name"] = name;
-            Session["pswd"] = pswd;
-            
-            Response.Redirect("loginGetting.aspx");
-            //Server.Transfer("loginGetting.aspx", true);
+            if (!String.IsNullOrEmpty(name) && !String.IsNullOrEmpty(pswd))
+            {
+                Session["name"] = name;
+                Session["pswd"] = pswd;
+
+                Response.Redirect("loginGetting.aspx");
+            }
         }
     }
 }

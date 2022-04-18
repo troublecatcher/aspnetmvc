@@ -13,19 +13,16 @@ namespace lab1
         {
 
         }
-
-        protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         protected void submit_Click(object sender, EventArgs e)
         {
-            result.Text = "Ваш ник - " +
-                nickname.Text + ", вы играете за '" +
-                ListBox1.SelectedItem + "', ваш цвет - " +
-                DropDownList1.SelectedItem + ", ваша команда - " +
-                RadioButtonList1.SelectedItem;
+            if (!String.IsNullOrEmpty(nickname.Text))
+            {
+                result.Text = "Ваш ник - "
+                + nickname.Text + ", вы играете за '"
+                + ListBox1.SelectedItem + "', ваш цвет - "
+                + DropDownList1.SelectedItem + ", ваша команда - "
+                + RadioButtonList1.SelectedItem;
+            }
         }
     }
 }

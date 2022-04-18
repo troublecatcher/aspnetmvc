@@ -46,7 +46,7 @@
                 <tr>
                     <td class="auto-style2">пароль</td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="password" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style2">
                         <asp:RequiredFieldValidator ID="label_password" runat="server" ControlToValidate="password" ErrorMessage="введите пароль!" ForeColor="Maroon"></asp:RequiredFieldValidator>

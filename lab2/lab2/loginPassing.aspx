@@ -9,7 +9,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:TextBox ID="username" runat="server">Логин</asp:TextBox>
+        <asp:TextBox ID="username" runat="server" placeholder="Логин"></asp:TextBox>
         <div>
             <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
         </div>

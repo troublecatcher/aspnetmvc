@@ -31,36 +31,29 @@ namespace lab2
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(username.Text) ||
-                password.Text.Length < 8 ||
-                password.Text != password_confirm.Text ||
-                IsValidEmail(email.Text) == false ||
-                Convert.ToInt32(age.Text) < 18 || Convert.ToInt32(age.Text) > 65)
-            {
+            if (String.IsNullOrEmpty(username.Text)
+                || password.Text.Length < 8
+                || password.Text != password_confirm.Text
+                || IsValidEmail(email.Text) == false
+                || Convert.ToInt32(age.Text) < 18
+                || Convert.ToInt32(age.Text) > 65)
+
                 result.Text = "попробуйте еще";
-            }
             else
-            {
                 result.Text = "всё хорошо)";
-            }
         }
         bool IsValidEmail(string email)
         {
             var trimmedEmail = email.Trim();
 
             if (trimmedEmail.EndsWith("."))
-            {
                 return false;
-            }
             try
             {
                 var addr = new System.Net.Mail.MailAddress(email);
                 return addr.Address == trimmedEmail;
             }
-            catch
-            {
-                return false;
-            }
+            catch { return false; }
         }
     }
 }

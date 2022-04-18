@@ -10,9 +10,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:TextBox ID="nickname" runat="server">Никнейм</asp:TextBox>
+            <asp:TextBox ID="nickname" runat="server" placeholder="Никнейм"></asp:TextBox>
             <br />
-            <asp:ListBox ID="ListBox1" runat="server" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged">
+            <asp:ListBox ID="ListBox1" runat="server">
                 <asp:ListItem Selected="True">Орк</asp:ListItem>
                 <asp:ListItem>Эльф</asp:ListItem>
                 <asp:ListItem>Маг</asp:ListItem>
