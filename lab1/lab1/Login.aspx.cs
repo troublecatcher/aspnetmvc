@@ -20,8 +20,8 @@ namespace lab1
             List.Add("anton", "123");
             List.Add("da", "456");
             List.Add("net", "789");
-            if (List.ContainsKey(username.Text))
-                if (List[username.Text] == password.Text)
+            if (List.ContainsKey(username.Text.ToLower()))
+                if (List[username.Text.ToLower()] == password.Text)
                     Response.Redirect("success.aspx");
                 else
                     sorry();
