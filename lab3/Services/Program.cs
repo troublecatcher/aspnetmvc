@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<MVCContext>(options =>
 {
-    options.UseSqlServer("");
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EFConnection"));
 });
 
 var app = builder.Build();
