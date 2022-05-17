@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3\\MVC CRUD\\MVC CRUD.csproj": {}
+    "/Users/anton/Documents/GitHub/brovko/lab3/MVC CRUD/MVC CRUD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3\\MVC CRUD\\MVC CRUD.csproj": {
+    "/Users/anton/Documents/GitHub/brovko/lab3/MVC CRUD/MVC CRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3\\MVC CRUD\\MVC CRUD.csproj",
+        "projectUniqueName": "/Users/anton/Documents/GitHub/brovko/lab3/MVC CRUD/MVC CRUD.csproj",
         "projectName": "MVC CRUD",
-        "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3\\MVC CRUD\\MVC CRUD.csproj",
-        "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3\\MVC CRUD\\obj\\",
+        "projectPath": "/Users/anton/Documents/GitHub/brovko/lab3/MVC CRUD/MVC CRUD.csproj",
+        "packagesPath": "/Users/anton/.nuget/packages/",
+        "outputPath": "/Users/anton/Documents/GitHub/brovko/lab3/MVC CRUD/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Anton\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/anton/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -81,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }
