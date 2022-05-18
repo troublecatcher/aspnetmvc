@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/anton/Documents/GitHub/brovko/lab3/lab5/calc.csproj",
+      "projectUniqueName": "/Users/anton/Projects/lab3+lab5/lab5/calc.csproj",
       "projectName": "calc",
-      "projectPath": "/Users/anton/Documents/GitHub/brovko/lab3/lab5/calc.csproj",
+      "projectPath": "/Users/anton/Projects/lab3+lab5/lab5/calc.csproj",
       "packagesPath": "/Users/anton/.nuget/packages/",
-      "outputPath": "/Users/anton/Documents/GitHub/brovko/lab3/lab5/obj/",
+      "outputPath": "/Users/anton/Projects/lab3+lab5/lab5/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/anton/.nuget/NuGet/NuGet.Config"

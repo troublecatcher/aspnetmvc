@@ -1,22 +1,33 @@
 ﻿<Properties StartupConfiguration="{B5DE07F1-543F-4BF5-A7EE-9981CF54FD8D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MVC CRUD/Views/Shared/_Layout.cshtml">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.calculator PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MVC CRUD/Models/Calculator.cs">
     <Files>
-      <File FileName="MVC CRUD/Views/Customers/Index.cshtml" Line="72" Column="1" />
-      <File FileName="MVC CRUD/Controllers/Everything.cs" Line="35" Column="1" />
-      <File FileName="MVC CRUD/Views/Shared/_Layout.cshtml" Line="29" Column="97" />
+      <File FileName="MVC CRUD/Models/Calculator.cs" Line="11" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="App" expanded="True">
-            <Node name="App" selected="True" />
-            <Node name="MVC_CRUD" expanded="True">
+            <Node name="api" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Calculator.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
+            </Node>
+            <Node name="calculator" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -26,10 +37,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.calc PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

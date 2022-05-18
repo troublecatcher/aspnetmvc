@@ -1,0 +1,20 @@
+﻿@model Calculator
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-action="Index" name="calc">
+    <div class="text-center">
+        <h1 class="display-4">Calculator</h1>
+        <input type="number" asp-for="v1" />
+        <select id="options" asp-for="action">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+        <input type="number" asp-for="v2" />
+        <input type="submit" value="Посчитать" />
+        <p><input asp-for="@ViewData["result"]" /></p>
+    </div>
+</form>

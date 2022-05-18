@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a6+2heO/opyybZRARut6KM0Y+GFdWYGhwviqLWpVq/umOb90gn012wcScG3EuP45OizxKXkulwQD3mpKoRMecw==",
+  "dgSpecHash": "ThPDt88d0Rs7duoMS5UvvQd9Mlbk//DUS5ukcoTEUPRXbqiNP06w6eYl0pMhSWJ6guw5K1nfFHZvorFj9UnlZQ==",
   "success": true,
-  "projectFilePath": "/Users/anton/Documents/GitHub/brovko/lab3/lab5/calc.csproj",
+  "projectFilePath": "/Users/anton/Projects/lab3+lab5/lab5/calc.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

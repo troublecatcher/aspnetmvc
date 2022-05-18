@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "tbRz5RhmULBcBP2DxaRHIAo3WVGuKQFb/WRnyoHLz+nU+y19SjRZbNfyeYVf7hUKPMNzGmSY0iDoXVxj5WE7qg==",
+  "dgSpecHash": "i79OBEvJLOfYVmnZOEelrViUH+uOchJM3m/n9litSw9eFrCRQ1jq+JiUf3DmH82VStZWtwEqE0QkWcHV2uDndQ==",
   "success": true,
-  "projectFilePath": "/Users/anton/Documents/GitHub/brovko/lab3/MVC CRUD/api.csproj",
+  "projectFilePath": "/Users/anton/Projects/lab3+lab5/MVC CRUD/api.csproj",
   "expectedPackageFiles": [
-    "/Users/anton/.nuget/packages/grid.mvc/3.0.0/grid.mvc.3.0.0.nupkg.sha512",
     "/Users/anton/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/anton/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/Users/anton/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",
@@ -34,7 +33,7 @@
     "/Users/anton/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.1.1/microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "/Users/anton/.nuget/packages/microsoft.data.sqlite.core/6.0.5/microsoft.data.sqlite.core.6.0.5.nupkg.sha512",
     "/Users/anton/.nuget/packages/microsoft.diasymreader/1.3.0/microsoft.diasymreader.1.3.0.nupkg.sha512",
-    "/Users/anton/.nuget/packages/microsoft.dotnet.scaffolding.shared/6.0.4/microsoft.dotnet.scaffolding.shared.6.0.4.nupkg.sha512",
+    "/Users/anton/.nuget/packages/microsoft.dotnet.scaffolding.shared/6.0.5/microsoft.dotnet.scaffolding.shared.6.0.5.nupkg.sha512",
     "/Users/anton/.nuget/packages/microsoft.entityframeworkcore/6.0.5/microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
     "/Users/anton/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.5/microsoft.entityframeworkcore.abstractions.6.0.5.nupkg.sha512",
     "/Users/anton/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.5/microsoft.entityframeworkcore.analyzers.6.0.5.nupkg.sha512",
@@ -66,13 +65,13 @@
     "/Users/anton/.nuget/packages/microsoft.netcore.targets/1.1.3/microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "/Users/anton/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/anton/.nuget/packages/microsoft.visualstudio.debugger.contracts/17.2.0/microsoft.visualstudio.debugger.contracts.17.2.0.nupkg.sha512",
-    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegeneration/6.0.4/microsoft.visualstudio.web.codegeneration.6.0.4.nupkg.sha512",
-    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegeneration.core/6.0.4/microsoft.visualstudio.web.codegeneration.core.6.0.4.nupkg.sha512",
-    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegeneration.design/6.0.4/microsoft.visualstudio.web.codegeneration.design.6.0.4.nupkg.sha512",
-    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegeneration.entityframeworkcore/6.0.4/microsoft.visualstudio.web.codegeneration.entityframeworkcore.6.0.4.nupkg.sha512",
-    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegeneration.templating/6.0.4/microsoft.visualstudio.web.codegeneration.templating.6.0.4.nupkg.sha512",
-    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegeneration.utils/6.0.4/microsoft.visualstudio.web.codegeneration.utils.6.0.4.nupkg.sha512",
-    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegenerators.mvc/6.0.4/microsoft.visualstudio.web.codegenerators.mvc.6.0.4.nupkg.sha512",
+    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegeneration/6.0.5/microsoft.visualstudio.web.codegeneration.6.0.5.nupkg.sha512",
+    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegeneration.core/6.0.5/microsoft.visualstudio.web.codegeneration.core.6.0.5.nupkg.sha512",
+    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegeneration.design/6.0.5/microsoft.visualstudio.web.codegeneration.design.6.0.5.nupkg.sha512",
+    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegeneration.entityframeworkcore/6.0.5/microsoft.visualstudio.web.codegeneration.entityframeworkcore.6.0.5.nupkg.sha512",
+    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegeneration.templating/6.0.5/microsoft.visualstudio.web.codegeneration.templating.6.0.5.nupkg.sha512",
+    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegeneration.utils/6.0.5/microsoft.visualstudio.web.codegeneration.utils.6.0.5.nupkg.sha512",
+    "/Users/anton/.nuget/packages/microsoft.visualstudio.web.codegenerators.mvc/6.0.5/microsoft.visualstudio.web.codegenerators.mvc.6.0.5.nupkg.sha512",
     "/Users/anton/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "/Users/anton/.nuget/packages/microsoft.win32.registry/4.7.0/microsoft.win32.registry.4.7.0.nupkg.sha512",
     "/Users/anton/.nuget/packages/microsoft.win32.systemevents/4.7.0/microsoft.win32.systemevents.4.7.0.nupkg.sha512",
@@ -107,10 +106,10 @@
     "/Users/anton/.nuget/packages/sqlitepclraw.core/2.0.6/sqlitepclraw.core.2.0.6.nupkg.sha512",
     "/Users/anton/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.6/sqlitepclraw.lib.e_sqlite3.2.0.6.nupkg.sha512",
     "/Users/anton/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.0.6/sqlitepclraw.provider.e_sqlite3.2.0.6.nupkg.sha512",
-    "/Users/anton/.nuget/packages/swashbuckle.aspnetcore/6.3.0/swashbuckle.aspnetcore.6.3.0.nupkg.sha512",
-    "/Users/anton/.nuget/packages/swashbuckle.aspnetcore.swagger/6.3.0/swashbuckle.aspnetcore.swagger.6.3.0.nupkg.sha512",
-    "/Users/anton/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.3.0/swashbuckle.aspnetcore.swaggergen.6.3.0.nupkg.sha512",
-    "/Users/anton/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.3.0/swashbuckle.aspnetcore.swaggerui.6.3.0.nupkg.sha512",
+    "/Users/anton/.nuget/packages/swashbuckle.aspnetcore/6.3.1/swashbuckle.aspnetcore.6.3.1.nupkg.sha512",
+    "/Users/anton/.nuget/packages/swashbuckle.aspnetcore.swagger/6.3.1/swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
+    "/Users/anton/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.3.1/swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
+    "/Users/anton/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.3.1/swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512",
     "/Users/anton/.nuget/packages/system.appcontext/4.3.0/system.appcontext.4.3.0.nupkg.sha512",
     "/Users/anton/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/Users/anton/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
@@ -192,16 +191,5 @@
     "/Users/anton/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/Users/anton/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Grid.Mvc 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Grid.Mvc",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }
