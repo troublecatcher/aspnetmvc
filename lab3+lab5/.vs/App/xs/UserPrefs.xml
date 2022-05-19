@@ -1,34 +1,16 @@
 ﻿<Properties StartupConfiguration="{B5DE07F1-543F-4BF5-A7EE-9981CF54FD8D}|Default">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.calculator PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MVC CRUD/Models/Calculator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MVC CRUD/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="MVC CRUD/Models/Calculator.cs" Line="11" Column="6" />
+      <File FileName="MVC CRUD/Views/Home/Index.cshtml" Line="1" Column="46" />
+      <File FileName="MVC CRUD/Controllers/OrdersController.cs" Line="7" Column="21" />
+      <File FileName="MVC CRUD/Views/Customers/Index.cshtml" Line="1" Column="46" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="App" expanded="True">
-            <Node name="api" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Calculator.cs" selected="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="calculator" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
-              </Node>
-              <Node name="appsettings.json" expanded="True" />
-            </Node>
+            <Node name="api" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -37,9 +19,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
 </Properties>

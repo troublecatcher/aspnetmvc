@@ -1,36 +1,38 @@
-﻿@{
+﻿@model IEnumerable<MVC_CRUD.Models.Customers>
+@using GridMvc.Html
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <button class="btn btn-dark" onclick="window.location.href='./asdasfadf';">
-        На несуществующую страницу  
+        На несуществующую страницу
     </button>
-    <button id="button" class="btn btn-light">Показать заказчиков через сервис</button>
-<script>
-    const button = document.getElementById('button');
+    <button id="button" class="btn btn-dark">Показать заказчиков через сервис</button>
+    <script>const button = document.getElementById('button');
 
-    button.addEventListener('click', async function () {
-        try{
-            let res = await fetch('../api/customersapi');
-            let data = await res.json();
-            let table = document.createElement('table');
-            table.classList.add('table');
-            table.style.border = '1px solid lightgray';
-            button.before(table);
-            for (let item of data) {
-                let tr = document.createElement('tr');
-                table.appendChild(tr);
-                for (let key in item) {
-                    let td = document.createElement('td');
-                    td.textContent = item[key];
-                    tr.append(td);
+        button.addEventListener('click', async function () {
+            try {
+                let res = await fetch('../api/customersapi');
+                let data = await res.json();
+                let table = document.createElement('table');
+                table.classList.add('table');
+                button.before(table);
+                let tbody = document.createElement('tbody');
+                table.append(tbody);
+                for (let item of data) {
+                    let tr = document.createElement('tr');
+                    tbody.appendChild(tr);
+                    for (let key in item) {
+                        let td = document.createElement('td');
+                        td.textContent = item[key];
+                        tr.append(td);
+                    }
                 }
             }
-        }
-        catch (err) {
-            console.log(err);
-        }
-    });
-</script>
+            catch (err) {
+                console.log(err);
+            }
+        });</script>
 </div>

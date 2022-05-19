@@ -866,3 +866,4 @@
 /Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/obj/Debug/net6.0/api.pdb
 /Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/obj/Debug/net6.0/api.genruntimeconfig.cache
 /Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/obj/Debug/net6.0/ref/api.dll
+/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/bin/Debug/net6.0/GridMvc.dll

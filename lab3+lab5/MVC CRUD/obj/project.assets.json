@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Grid.Mvc/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/GridMvc.dll": {}
+        },
+        "runtime": {
+          "lib/net40/GridMvc.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "type": "package",
         "compile": {
@@ -3305,6 +3314,26 @@
     }
   },
   "libraries": {
+    "Grid.Mvc/3.0.0": {
+      "sha512": "+yQe5na+egQCaIdBLCmcoFlo44OzvShkTsK/Jw3thkH0aZgta6mQ0PK/eWzsCAYTL6kYB+5zzTGSBH/ZOUSSrQ==",
+      "type": "package",
+      "path": "grid.mvc/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/Gridmvc.css",
+        "Content/Grid.mvc.readme",
+        "Content/Scripts/gridmvc.js",
+        "Content/Scripts/gridmvc.lang.ru.js",
+        "Content/Scripts/gridmvc.min.js",
+        "Content/Views/Shared/_Grid.cshtml",
+        "Content/Views/Shared/_GridPager.cshtml",
+        "Content/web.config.transform",
+        "grid.mvc.3.0.0.nupkg.sha512",
+        "grid.mvc.nuspec",
+        "lib/net40/GridMvc.dll"
+      ]
+    },
     "Humanizer.Core/2.8.26": {
       "sha512": "OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "type": "package",
@@ -10049,6 +10078,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Grid.Mvc >= 3.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.5",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.5",
@@ -10093,6 +10123,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Grid.Mvc": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[6.0.5, )"
@@ -10137,5 +10171,17 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Grid.Mvc 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Grid.Mvc",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
