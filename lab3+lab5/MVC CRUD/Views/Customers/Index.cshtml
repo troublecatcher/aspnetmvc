@@ -69,32 +69,3 @@
 }
     </tbody>
 </table>
-<input type="button"
-       id="button"
-       value="Вызвать через api"/>
-<script>
-    const button = document.getElementById('button');
-
-    button.addEventListener('click', async function () {
-        try{
-            let res = await fetch('../api/everything');
-            let data = await res.json();
-            let table = document.createElement('table');
-            table.classList.add('table');
-            table.style.border = '1px solid lightgray';
-            button.before(table);
-            for (let item of data) {
-                let tr = document.createElement('tr');
-                table.appendChild(tr);
-                for (let key in item) {
-                    let td = document.createElement('td');
-                    td.textContent = item[key];
-                    tr.append(td);
-                }
-            }
-        }
-        catch (err) {
-            console.log(err);
-        }
-    });
-</script>

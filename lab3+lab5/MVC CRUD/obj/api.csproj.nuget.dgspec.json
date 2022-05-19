@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/anton/Projects/lab3+lab5/MVC CRUD/api.csproj": {}
+    "/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/api.csproj": {}
   },
   "projects": {
-    "/Users/anton/Projects/lab3+lab5/MVC CRUD/api.csproj": {
+    "/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anton/Projects/lab3+lab5/MVC CRUD/api.csproj",
+        "projectUniqueName": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/api.csproj",
         "projectName": "api",
-        "projectPath": "/Users/anton/Projects/lab3+lab5/MVC CRUD/api.csproj",
+        "projectPath": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/api.csproj",
         "packagesPath": "/Users/anton/.nuget/packages/",
-        "outputPath": "/Users/anton/Projects/lab3+lab5/MVC CRUD/obj/",
+        "outputPath": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/anton/.nuget/NuGet/NuGet.Config"

@@ -8,85 +8,85 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MVC_CRUD
 build_property.RootNamespace = MVC_CRUD
-build_property.ProjectDir = /Users/anton/Projects/lab3+lab5/MVC CRUD/
+build_property.ProjectDir = /Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/anton/Projects/lab3+lab5/MVC CRUD
+build_property.MSBuildProjectDirectory = /Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Customers/Create.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Customers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Customers/Delete.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Customers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Customers/Details.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Customers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Customers/Edit.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Customers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Customers/Index.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Customers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Home/Index.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Home/Privacy.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Index.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Orders/Create.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Orders/Delete.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Orders/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Orders/Details.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Orders/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Orders/Edit.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Orders/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Orders/Index.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Shared/Error.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Shared/ErrorPage.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Shared/ErrorPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/_ViewImports.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/_ViewStart.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Projects/lab3+lab5/MVC CRUD/Views/Shared/_Layout.cshtml]
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-77uj73hxdm

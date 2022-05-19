@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KKj2JbCHRp2CMmmSfoXXhTs/6LRZw6DoweLifdfExrh1dXyEgUetxcL2V5k1pqRHvrVLJ7jaQkmE8PwAHZQQ4g==",
+  "dgSpecHash": "cvIiq2L4FXSQLeQo+7v/8DORDr/egnDCe+FPNyiJjzvDNcuM06EnPXnYt5zEVpceIO9ncMzbFFLuSANn2Dhn9g==",
   "success": true,
-  "projectFilePath": "/Users/anton/Projects/lab3+lab5/calculator/calculator.csproj",
+  "projectFilePath": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/calculator/calculator.csproj",
   "expectedPackageFiles": [
     "/Users/anton/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "/Users/anton/.nuget/packages/microsoft.aspnetcore.razor/2.2.0/microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/anton/Projects/lab3+lab5/calculator/calculator.csproj": {}
+    "/Users/anton/Documents/GitHub/brovko/lab3+lab5/calculator/calculator.csproj": {}
   },
   "projects": {
-    "/Users/anton/Projects/lab3+lab5/calculator/calculator.csproj": {
+    "/Users/anton/Documents/GitHub/brovko/lab3+lab5/calculator/calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anton/Projects/lab3+lab5/calculator/calculator.csproj",
+        "projectUniqueName": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/calculator/calculator.csproj",
         "projectName": "calculator",
-        "projectPath": "/Users/anton/Projects/lab3+lab5/calculator/calculator.csproj",
+        "projectPath": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/calculator/calculator.csproj",
         "packagesPath": "/Users/anton/.nuget/packages/",
-        "outputPath": "/Users/anton/Projects/lab3+lab5/calculator/obj/",
+        "outputPath": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/calculator/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/anton/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i79OBEvJLOfYVmnZOEelrViUH+uOchJM3m/n9litSw9eFrCRQ1jq+JiUf3DmH82VStZWtwEqE0QkWcHV2uDndQ==",
+  "dgSpecHash": "m8wsahjEE8mE0tNMNmavt4mfjOEzZsbZ6Cnx3SvkQ6g0qi/kwVd8y22FSGFDlU9zWJFjrFmi0Jksnz/kQuuofg==",
   "success": true,
-  "projectFilePath": "/Users/anton/Projects/lab3+lab5/MVC CRUD/api.csproj",
+  "projectFilePath": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/api.csproj",
   "expectedPackageFiles": [
     "/Users/anton/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/anton/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",

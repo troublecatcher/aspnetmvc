@@ -11,11 +11,11 @@ namespace MVC_CRUD.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Everything : ControllerBase
+    public class CustomersAPI : ControllerBase
     {
         private readonly Context _context;
 
-        public Everything(Context context)
+        public CustomersAPI(Context context)
         {
             _context = context;
         }
