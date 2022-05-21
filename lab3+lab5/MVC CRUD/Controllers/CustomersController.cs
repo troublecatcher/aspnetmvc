@@ -18,25 +18,10 @@ namespace MVC_CRUD.Controllers
         {
             _context = context;
         }
-
-        private readonly IMemoryCache _memoryCache;
-        public CustomersController(IMemoryCache memoryCache)
-        {
-            _memoryCache = memoryCache;
-        }
-        
         // GET: Customers
 
         public async Task<IActionResult> Index()
         {
-            List<Customers> output;
-            output = _memoryCache.Get<List<Customers>>("customers");
-            if(output == null)
-            {
-                
-                output = CustomersAPI.GetCustomers();
-            }
-            _memoryCache.Set("employee", output, TimeSpan.FromMinutes(1));
             return _context.Customers != null ? 
                           View(await _context.Customers.ToListAsync()) :
                           Problem("Entity set 'Context.Customers'  is null.");
