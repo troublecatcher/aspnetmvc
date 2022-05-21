@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using MVC_CRUD.Models;
 
 namespace MVC_CRUD.Controllers
@@ -18,10 +19,25 @@ namespace MVC_CRUD.Controllers
             _context = context;
         }
 
+        private readonly IMemoryCache _memoryCache;
+        public CustomersController(IMemoryCache memoryCache)
+        {
+            _memoryCache = memoryCache;
+        }
+        
         // GET: Customers
+
         public async Task<IActionResult> Index()
         {
-              return _context.Customers != null ? 
+            List<Customers> output;
+            output = _memoryCache.Get<List<Customers>>("customers");
+            if(output == null)
+            {
+                
+                output = CustomersAPI.GetCustomers();
+            }
+            _memoryCache.Set("employee", output, TimeSpan.FromMinutes(1));
+            return _context.Customers != null ? 
                           View(await _context.Customers.ToListAsync()) :
                           Problem("Entity set 'Context.Customers'  is null.");
         }

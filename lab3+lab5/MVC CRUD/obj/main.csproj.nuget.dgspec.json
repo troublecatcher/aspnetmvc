@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3+lab5\\MVC CRUD\\api.csproj": {}
+    "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3+lab5\\MVC CRUD\\main.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3+lab5\\MVC CRUD\\api.csproj": {
+    "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3+lab5\\MVC CRUD\\main.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3+lab5\\MVC CRUD\\api.csproj",
-        "projectName": "api",
-        "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3+lab5\\MVC CRUD\\api.csproj",
+        "projectUniqueName": "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3+lab5\\MVC CRUD\\main.csproj",
+        "projectName": "main",
+        "projectPath": "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3+lab5\\MVC CRUD\\main.csproj",
         "packagesPath": "C:\\Users\\Anton\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Anton\\Documents\\GitHub\\it-labs\\lab3+lab5\\MVC CRUD\\obj\\",
         "projectStyle": "PackageReference",
@@ -44,10 +44,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Grid.Mvc": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.5, )"
@@ -61,6 +57,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.5, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[6.0.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
