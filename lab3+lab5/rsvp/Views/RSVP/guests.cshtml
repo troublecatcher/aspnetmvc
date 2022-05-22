@@ -1,0 +1,48 @@
+﻿@model IEnumerable<rsvp.Models.Guest>
+@{
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Имя
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Телефон
+            </th>
+            <th>
+                Пойдет?
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Name
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    @item.Phone
+                </td>
+                <td>
+                    @if (item.WillAttend == true)
+                    {
+                        @:Да
+                    }
+                    else
+                    {
+                        @:Нет
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -25,6 +25,10 @@
   <ItemGroup>
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
     <None Remove="Grid.Mvc" />
+    <None Remove="Views\Master\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Master\" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>

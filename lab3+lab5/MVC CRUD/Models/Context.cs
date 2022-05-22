@@ -8,7 +8,7 @@ namespace MVC_CRUD.Models
         {
 
         }
-        public DbSet<Orders> Orders { get; set; }
-        public DbSet<Customers> Customers { get; set; }
+        public DbSet<Orders>? Orders { get; set; }
+        public DbSet<Customers>? Customers { get; set; }
     }
 }

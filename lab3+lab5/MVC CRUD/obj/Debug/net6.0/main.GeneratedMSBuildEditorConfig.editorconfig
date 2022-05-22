@@ -43,6 +43,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Master/First.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyL0ZpcnN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Master/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Master/Second.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyL1NlY29uZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

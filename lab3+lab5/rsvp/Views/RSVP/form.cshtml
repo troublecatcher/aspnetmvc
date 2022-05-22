@@ -1,0 +1,33 @@
+﻿
+@model rsvp.Models.Guest
+@{
+}
+
+<div class="container text-center">
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+    <p>
+        Ваше имя: @Html.TextBoxFor(x => x.Name)
+        <span asp-validation-for=Name class="text-danger"></span>
+    </p>
+    <p>
+        Ваше email: @Html.TextBoxFor(x => x.Email)
+        <span asp-validation-for=Email class="text-danger"></span>
+    </p>
+    <p>
+        Ваш телефон: @Html.TextBoxFor(x => x.Phone)
+        <span asp-validation-for=Phone class="text-danger"></span>
+    </p>
+    <p>
+        Вы придёте?
+        @Html.DropDownListFor(x => x.WillAttend, new[]
+    {
+       new SelectListItem() {Text = "Да, конечно я буду", Value = Boolean.TrueString},
+       new SelectListItem() {Text = "Нет, я не смогу", Value = Boolean.FalseString}
+    })
+        <span asp-validation-for=WillAttend class="text-danger"></span>
+    </p>
+        <input asp-controller="RSVP" asp-action="NewGuest" type="submit" value="Отправить!" />
+    }
+</div>
