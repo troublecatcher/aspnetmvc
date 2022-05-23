@@ -14,7 +14,7 @@
         "outputPath": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/rsvp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/anton/.nuget/NuGet/NuGet.Config"
+          "/Users/anton/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

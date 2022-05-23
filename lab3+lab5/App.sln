@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "calculator", "calculator\ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rsvp", "rsvp\rsvp.csproj", "{C7F7E3CC-75F9-4100-BC87-3721AF3A97D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebStore.WebUI", "..\..\..\..\Desktop\бровко\WebStore\WebStore.WebUI\WebStore.WebUI.csproj", "{D9938052-9246-40C4-AFBC-BC60121CB8E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C7F7E3CC-75F9-4100-BC87-3721AF3A97D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7F7E3CC-75F9-4100-BC87-3721AF3A97D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7F7E3CC-75F9-4100-BC87-3721AF3A97D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9938052-9246-40C4-AFBC-BC60121CB8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9938052-9246-40C4-AFBC-BC60121CB8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9938052-9246-40C4-AFBC-BC60121CB8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9938052-9246-40C4-AFBC-BC60121CB8E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

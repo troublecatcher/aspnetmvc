@@ -1,37 +1,25 @@
-﻿@model IEnumerable<MVC_CRUD.Models.Customers>
+﻿@model IEnumerable<MVC_CRUD.Models.Item>
 
 @{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <button class="btn btn-dark" onclick="window.location.href='./asdasfadf';">
-        На несуществующую страницу
-    </button>
-    <button id="button" class="btn btn-dark">Показать заказчиков через сервис</button>
-    <script>const button = document.getElementById('button');
-
-        button.addEventListener('click', async function () {
-            try {
-                let res = await fetch('../api/customersapi');
-                let data = await res.json();
-                let table = document.createElement('table');
-                table.classList.add('table');
-                button.before(table);
-                let tbody = document.createElement('tbody');
-                table.append(tbody);
-                for (let item of data) {
-                    let tr = document.createElement('tr');
-                    tbody.appendChild(tr);
-                    for (let key in item) {
-                        let td = document.createElement('td');
-                        td.textContent = item[key];
-                        tr.append(td);
-                    }
-                }
+<div class="container row">
+    @foreach (var item in Model)
+    {
+    <div class="col d-flex flex-column text-center justify-content-around " style="border: 1px solid crimson">
+        <p>@item.Title</p>
+        <p>@item.Desc</p>
+        <p>@item.Price</p>
+        <p>@item.Qty</p>
+        @if (item.Qty > 0)
+        {
+            <button>В корзину</button>
+         }
+         else
+            {
+                <button class="text-danger" disabled>Раскупили...</button>
             }
-            catch (err) {
-                console.log(err);
-            }
-        });</script>
+    </div>
+    }
+
 </div>
