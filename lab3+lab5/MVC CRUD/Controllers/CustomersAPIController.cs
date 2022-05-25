@@ -22,24 +22,22 @@ namespace MVC_CRUD.Controllers
             _memoryCache = memoryCache;
         }
 
-        // GET: api/Everything
+        // GET: api/getcustomers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Customers>>> GetCustomers()
         {
-            var customers = await _context.Customers.ToListAsync();
-            //customers = _memoryCache.Get<List<Customers>>("customers");
-            if (customers == null)
+            List<Customers> customers;
+            if (!_memoryCache.TryGetValue("customers", out customers))
             {
-                if(_memoryCache.Get<List<Customers>>("customers") == null)
-                    return NotFound();
-                else
+                customers = await _context.Customers.ToListAsync();
+                if (customers != null)
                 {
-                    customers = _memoryCache.Get<List<Customers>>("customers");
+                    _memoryCache.Set("customers", customers, TimeSpan.FromMinutes(1));
                     return customers;
                 }
+                
             }
-            _memoryCache.Set("customers", customers, TimeSpan.FromMinutes(1));
-            return customers;
+            return _memoryCache.Get<List<Customers>>("customers");
         }
     }
 }

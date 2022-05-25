@@ -24,11 +24,8 @@ namespace rsvp.Migrations
 
             modelBuilder.Entity("rsvp.Models.Guest", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -38,15 +35,11 @@ namespace rsvp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool?>("WillAttend")
                         .IsRequired()
                         .HasColumnType("bit");
 
-                    b.HasKey("Id");
+                    b.HasKey("Phone");
 
                     b.ToTable("guest");
                 });

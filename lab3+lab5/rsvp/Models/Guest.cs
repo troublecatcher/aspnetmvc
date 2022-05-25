@@ -5,7 +5,6 @@ namespace rsvp.Models
 {
 	public class Guest
 	{
-        public int Id { get; set; }
         [Required(ErrorMessage = "Пожалуйста, введите своё имя")]
         public string? Name { get; set; }
 
@@ -13,6 +12,7 @@ namespace rsvp.Models
         [RegularExpression(".+\\@.+\\..+", ErrorMessage = "Вы ввели некорректный e-mail")]
         public string? Email { get; set; }
 
+        [Key]
         [Required(ErrorMessage = "Пожалуйста, введите телефон")]
         public string? Phone { get; set; }
 

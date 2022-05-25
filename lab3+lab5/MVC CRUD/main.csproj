@@ -20,15 +20,19 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
     <None Remove="Grid.Mvc" />
     <None Remove="Views\Master\" />
+    <None Remove="Views\Cart\" />
+    <None Remove="Newtonsoft.Json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Master\" />
+    <Folder Include="Views\Cart\" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>

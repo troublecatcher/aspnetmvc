@@ -10054,6 +10054,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.5",
       "Microsoft.Extensions.Caching.Memory >= 6.0.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.5",
+      "Newtonsoft.Json >= 13.0.1",
       "Swashbuckle.AspNetCore >= 6.3.1"
     ]
   },
@@ -10070,7 +10071,7 @@
       "outputPath": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/anton/.nuget/NuGet/NuGet.Config"
+        "/Users/anton/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -10115,6 +10116,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.5, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

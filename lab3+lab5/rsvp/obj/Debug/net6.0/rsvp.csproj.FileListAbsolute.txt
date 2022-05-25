@@ -262,7 +262,7 @@
 /Users/anton/Documents/GitHub/brovko/lab3+lab5/rsvp/obj/Debug/net6.0/scopedcss/projectbundle/rsvp.bundle.scp.css
 /Users/anton/Documents/GitHub/brovko/lab3+lab5/rsvp/obj/Debug/net6.0/rsvp.csproj.CopyComplete
 /Users/anton/Documents/GitHub/brovko/lab3+lab5/rsvp/obj/Debug/net6.0/rsvp.dll
-/Users/anton/Documents/GitHub/brovko/lab3+lab5/rsvp/obj/Debug/net6.0/refint/rsvp.dll
 /Users/anton/Documents/GitHub/brovko/lab3+lab5/rsvp/obj/Debug/net6.0/rsvp.pdb
 /Users/anton/Documents/GitHub/brovko/lab3+lab5/rsvp/obj/Debug/net6.0/rsvp.genruntimeconfig.cache
 /Users/anton/Documents/GitHub/brovko/lab3+lab5/rsvp/obj/Debug/net6.0/ref/rsvp.dll
+/Users/anton/Documents/GitHub/brovko/lab3+lab5/rsvp/bin/Debug/net6.0/ref/rsvp.dll

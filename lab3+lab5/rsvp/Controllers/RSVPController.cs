@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using rsvp.Models;
 
 namespace rsvp.Controllers
@@ -15,10 +16,18 @@ namespace rsvp.Controllers
             _context = context;
         }
         [HttpPost]
-        public async Task<IActionResult> NewGuest([Bind("Id,Name,Email,Phone,WillAttend")] Guest guest)
+        public async Task<IActionResult> NewGuest([Bind("Name,Email,Phone,WillAttend")] Guest guest)
         {
             if (ModelState.IsValid)
             {
+                var g = await _context.guest
+                .FirstOrDefaultAsync(m => m.Phone == guest.Phone);
+                if(g != default)
+                {
+                    g.Name = guest.Name;
+                    g.Email = guest.Email;
+                    g.WillAttend = guest.WillAttend;
+                }else
                 _context.Add(guest);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("thanks");

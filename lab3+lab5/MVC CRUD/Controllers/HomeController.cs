@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MVC_CRUD.Models;
 using System.Diagnostics;
+using Newtonsoft.Json;
 
 namespace MVC_CRUD.Controllers
 {
@@ -9,6 +10,7 @@ namespace MVC_CRUD.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly Context _context;
+        private List<Cart> cart;
 
         public HomeController(ILogger<HomeController> logger, Context context)
         {
@@ -21,7 +23,74 @@ namespace MVC_CRUD.Controllers
                           View(await _context.Items.ToListAsync()) :
                           Problem("Entity set 'Context.Customers'  is null.");
         }
-
+        public async Task<ActionResult> Add(int itemid, int qty)
+        {
+            if(qty != 0)
+            {
+                var cart = HttpContext.Session.GetString("cart");
+                if (cart == null)
+                {
+                    List<Item> li = new();
+                    var dbitem = await _context.Items.FirstOrDefaultAsync(i => i.ID == itemid);
+                    dbitem.Qty = qty;
+                    li.Add(dbitem);
+                    HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(li));
+                    //ViewBag.cart = li.Count;
+                    //HttpContext.Session.SetInt32("count", 1);
+                }
+                else
+                {
+                    var li = JsonConvert.DeserializeObject<List<Item>>(cart);
+                    var dbitem = await _context.Items.FirstOrDefaultAsync(i => i.ID == itemid);
+                    foreach (var item in li.ToList())
+                    {
+                        if (item.ID == itemid)
+                        {
+                            if (item.Qty + qty > dbitem.Qty)
+                                return View("Sorry");
+                            else item.Qty += qty;
+                            HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(li));
+                            return RedirectToAction("Index", "Home");
+                        }
+                    }
+                    dbitem.Qty = qty;
+                    li.Add(dbitem);
+                    HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(li));
+                    //ViewBag.cart = li.Count;
+                    //HttpContext.Session.SetInt32("count", (int)HttpContext.Session.GetInt32("count") + 1);
+                }
+            }
+            
+            return RedirectToAction("Index", "Home");
+        }
+        public async Task<ActionResult> Remove(int itemid)
+        {
+            var cart = HttpContext.Session.GetString("cart");
+            var li = JsonConvert.DeserializeObject<List<Item>>(cart);
+            foreach(var item in li.ToList())
+                if(item.ID == itemid)
+                    li.RemoveAt(li.IndexOf(item));
+            HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(li));
+            return RedirectToAction("Index", "Cart");
+        }
+        public async Task<ActionResult> Update(int itemid)
+        {
+            int qty = Int32.Parse(Request.Form["qty"]);
+            if (qty == 0)
+                Remove(itemid);
+            var cart = HttpContext.Session.GetString("cart");
+            var li = JsonConvert.DeserializeObject<List<Item>>(cart);
+            var dbitem = await _context.Items.FirstOrDefaultAsync(i => i.ID == itemid);
+            foreach (var item in li)
+                if (item.ID == itemid)
+                {
+                    if (qty > dbitem.Qty)
+                        return View("Sorry");
+                    item.Qty = qty;
+                }
+            HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(li));
+            return RedirectToAction("Index", "Cart");
+        }
         public IActionResult Privacy()
         {
             return View();
@@ -44,18 +113,6 @@ namespace MVC_CRUD.Controllers
             }
 
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-        public ActionResult AddToCart(int productid)
-        {
-            var cart = new List<Item>();
-            var product = _context.Items.Find(productid);
-            cart.Add(new Item()
-            {
-                ID = product.ID,
-                Qty = 1
-            });
-            Session["cart"] = cart;
-            return View();
         }
     }
 }

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<MVC_CRUD.Models.Item>
+@{
+    int sum = 0;
+}
+<script type="text/javascript">function update(id) {
+        document.forms[`updform${id}`].submit();
+    }</script>
+<h1>Корзина</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Qty)
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+
+            @foreach (var item in Model)
+            {
+                sum += item.Price * item.Qty;
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price) руб
+                    </td>
+                    <td>
+                        @{
+                            var fname = "updform" + item.ID;
+                        }
+                        <form method="post" name="@fname" action="@Url.Action("Update", "Home", new {itemid = item.ID})">
+
+                            <input onchange="update(@item.ID)" name="qty" type="number" value="@item.Qty" />
+                        </form>
+                    </td>
+                    <td>
+                        <form method="post" action="@Url.Action("Remove", "Home", new {itemid = item.ID})">
+                            <input class="btn btn-danger" type="submit" value="Удалить" />
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<h2>Итого: @sum руб</h2>
+@if (sum > 0)
+{
+    <form method="post" action="@Url.Action("Cashout", "Home")">
+        <input class="btn btn-primary" type="submit" value="Подтвердить заказ" />
+    </form>
+}

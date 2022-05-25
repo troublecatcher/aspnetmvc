@@ -10,6 +10,10 @@ builder.Services.AddDbContext<Context>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("Connection"));
 });
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(15);
+});
 
 var app = builder.Build();
 
@@ -23,9 +27,8 @@ app.UseStatusCodePagesWithReExecute("/ErrorPage/{0}");
 app.UseStaticFiles();
 
 app.UseRouting();
-
 app.UseAuthorization();
-
+app.UseSession();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

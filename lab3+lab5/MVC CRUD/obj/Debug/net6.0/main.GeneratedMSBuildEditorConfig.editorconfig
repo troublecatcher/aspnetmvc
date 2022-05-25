@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Customers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -101,6 +105,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Shared/ErrorPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Shared/Sorry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NvcnJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
