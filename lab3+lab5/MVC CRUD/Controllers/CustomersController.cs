@@ -46,6 +46,7 @@ namespace MVC_CRUD.Controllers
         }
 
         // GET: Customers/Create
+        [HttpGet]
         public IActionResult Create()
         {
             return View();

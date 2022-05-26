@@ -60,7 +60,7 @@
 <h2>Итого: @sum руб</h2>
 @if (sum > 0)
 {
-    <form method="post" action="@Url.Action("Cashout", "Home")">
+    <form method="post" action="@Url.Action("Index", "Cashout")">
         <input class="btn btn-primary" type="submit" value="Подтвердить заказ" />
     </form>
 }

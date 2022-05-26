@@ -29,10 +29,12 @@
     <None Remove="Views\Master\" />
     <None Remove="Views\Cart\" />
     <None Remove="Newtonsoft.Json" />
+    <None Remove="Views\Cashout\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Master\" />
     <Folder Include="Views\Cart\" />
+    <Folder Include="Views\Cashout\" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>
