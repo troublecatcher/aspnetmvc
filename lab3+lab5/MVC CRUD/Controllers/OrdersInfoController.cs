@@ -9,87 +9,94 @@ using MVC_CRUD.Models;
 
 namespace MVC_CRUD.Controllers
 {
-    public class RegisterController : Controller
+    public class OrdersInfoController : Controller
     {
         private readonly Context _context;
 
-        public RegisterController(Context context)
+        public OrdersInfoController(Context context)
         {
             _context = context;
         }
 
-        // GET: Register
+        // GET: OrdersInfo
         public async Task<IActionResult> Index()
         {
-              return _context.Registers != null ? 
-                          View(await _context.Registers.ToListAsync()) :
-                          Problem("Entity set 'Context.Registers'  is null.");
+            if(_context.OrdersInfo == null)
+                return Problem("Entity set 'Context.OrdersInfo'  is null.");
+            else
+            {
+                var l1 = await _context.Orders.ToListAsync();
+                var l2 = await _context.OrdersInfo.ToListAsync();
+                var l3 = await _context.Registers.ToListAsync();
+                var tuple = new Tuple<List<Orders>,List<OrdersInfo>,List<Register>>(l1,l2,l3);
+                return View(tuple);
+            }
         }
 
-        // GET: Register/Details/5
+        // GET: OrdersInfo/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Registers == null)
+            if (id == null || _context.OrdersInfo == null)
             {
                 return NotFound();
             }
 
-            var register = await _context.Registers
+            var ordersInfo = await _context.OrdersInfo
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (register == null)
+            if (ordersInfo == null)
             {
                 return NotFound();
             }
 
-            return View(register);
+            return View(ordersInfo);
         }
 
-        // GET: Register/Create
+        // GET: OrdersInfo/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Register/Create
+        // POST: OrdersInfo/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Surname,Name,Patro,Phone,Email,Password,ConfirmPassword,IsAdmin")] Register register)
+        public async Task<IActionResult> Create([Bind("ID,OrderID,Title,Price,Quantity,SubTotal")] OrdersInfo ordersInfo)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(register);
+                _context.Add(ordersInfo);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(register);
+            return View(ordersInfo);
         }
 
-        // GET: Register/Edit/5
+        // GET: OrdersInfo/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Registers == null)
+            if (id == null || _context.OrdersInfo == null)
             {
                 return NotFound();
             }
 
-            var register = await _context.Registers.FindAsync(id);
-            if (register == null)
+            var ordersInfo = await _context.OrdersInfo.FindAsync(id);
+            if (ordersInfo == null)
             {
                 return NotFound();
             }
-            return View(register);
+            return View(ordersInfo);
         }
 
-        // POST: Register/Edit/5
+        // POST: OrdersInfo/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Surname,Name,Patro,Phone,Email,Password,ConfirmPassword,IsAdmin")] Register register)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,OrderID,Title,Price,Quantity,SubTotal")] OrdersInfo ordersInfo)
         {
-            if (id != register.ID)
+            if (id != ordersInfo.ID)
             {
                 return NotFound();
             }
@@ -98,12 +105,12 @@ namespace MVC_CRUD.Controllers
             {
                 try
                 {
-                    _context.Update(register);
+                    _context.Update(ordersInfo);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!RegisterExists(register.ID))
+                    if (!OrdersInfoExists(ordersInfo.ID))
                     {
                         return NotFound();
                     }
@@ -114,49 +121,49 @@ namespace MVC_CRUD.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(register);
+            return View(ordersInfo);
         }
 
-        // GET: Register/Delete/5
+        // GET: OrdersInfo/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Registers == null)
+            if (id == null || _context.OrdersInfo == null)
             {
                 return NotFound();
             }
 
-            var register = await _context.Registers
+            var ordersInfo = await _context.OrdersInfo
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (register == null)
+            if (ordersInfo == null)
             {
                 return NotFound();
             }
 
-            return View(register);
+            return View(ordersInfo);
         }
 
-        // POST: Register/Delete/5
+        // POST: OrdersInfo/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Registers == null)
+            if (_context.OrdersInfo == null)
             {
-                return Problem("Entity set 'Context.Registers'  is null.");
+                return Problem("Entity set 'Context.OrdersInfo'  is null.");
             }
-            var register = await _context.Registers.FindAsync(id);
-            if (register != null)
+            var ordersInfo = await _context.OrdersInfo.FindAsync(id);
+            if (ordersInfo != null)
             {
-                _context.Registers.Remove(register);
+                _context.OrdersInfo.Remove(ordersInfo);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool RegisterExists(int id)
+        private bool OrdersInfoExists(int id)
         {
-          return (_context.Registers?.Any(e => e.ID == id)).GetValueOrDefault();
+          return (_context.OrdersInfo?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

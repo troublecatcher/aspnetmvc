@@ -14,27 +14,29 @@
         }
     </script>*@
 
-<div class="container row">
-    @foreach (var item in Model)
-    {
-        <div class="col d-flex flex-column text-center justify-content-around " style="border: 1px solid crimson">
-            <p>@item.Title</p>
-            <p>@item.Desc</p>
-            <p>@item.Price руб</p>
-            <p>В наличии: @item.Qty</p>
-            @if (item.Qty > 0)
-            {
-                <div>
-                    <form method="post" action="@Url.Action("Add", "Home", new {itemid = item.ID})">
-                        <input name="qty" type="number" min="1" max="@item.Qty" />
-                        <input class="btn btn-success" type="submit" value="В корзину" />
-                    </form>
-                </div>
-            }
-            else
-            {
-                <button class="btn btn-danger" disabled>Раскупили...</button>
-            }
-        </div>
-    }
+<div class="container">
+    <div class="row row-cols-4">
+        @foreach (var item in Model)
+        {
+            <div class="col text-center " style="border: 1px solid crimson">
+                <p>@item.Title</p>
+                <p>@item.Desc</p>
+                <p>@item.Price руб</p>
+                <p>В наличии: @item.Qty</p>
+                @if (item.Qty > 0)
+                {
+                    <div>
+                        <form method="post" action="@Url.Action("Add", "Home", new {itemid = item.ID})">
+                            <input name="qty" type="number" min="1" max="@item.Qty" />
+                            <input class="btn btn-success" type="submit" value="В корзину" />
+                        </form>
+                    </div>
+                }
+                else
+                {
+                    <button class="btn btn-danger" disabled>Раскупили...</button>
+                }
+            </div>
+        }
+    </div>
 </div>

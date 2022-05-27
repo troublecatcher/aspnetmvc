@@ -50,9 +50,10 @@ namespace MVC_CRUD.Controllers
         {
             if (ModelState.IsValid)
             {
-                HttpContext.Session.SetString("user", reg.Name);
                 _context.Registers.Add(reg);
                 await _context.SaveChangesAsync();
+                HttpContext.Session.SetString("user", reg.Name);
+                HttpContext.Session.SetInt32("userID", reg.ID);
                 HttpContext.Session.SetInt32("logged", 1);
                 return RedirectToAction("Index","Home");
             }

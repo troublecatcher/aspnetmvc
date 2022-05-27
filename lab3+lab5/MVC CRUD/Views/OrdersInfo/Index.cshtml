@@ -1,0 +1,36 @@
+@model Tuple<List<Orders>, List<OrdersInfo>, List<Register>>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="accordion">
+    @foreach (var order in Model.Item1)
+    {
+        var h = "header" + order.ID;
+        var b = "body" + order.ID;
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="@h">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#@b" aria-expanded="false" aria-controls="@b">
+                    Заказ №@order.ID, пользователь @Model.Item3.FirstOrDefault(m => m.ID == order.CustomerID).Name, сумма @order.Total
+                </button>
+            </h2>
+            <div id="@b" class="accordion-collapse collapse" aria-labelledby="@h">
+                <div class="accordion-body">
+                    <h3><a style="color: black" href="@Url.Action("Details", "Register", new { id = order.CustomerID})">@Model.Item3.FirstOrDefault(m => m.ID == order.CustomerID).Name @Model.Item3.FirstOrDefault(m => m.ID == order.CustomerID).Surname</a></h3>
+                    <ul class="list-group list-group-flush">
+                        @foreach (var orderinfo in Model.Item2)
+                        {
+                            if (order.ID == orderinfo.OrderID)
+                            {
+                                <li class="list-group-item sub-item">@orderinfo.Title, @orderinfo.Quantity шт, @orderinfo.Price руб, всего: @orderinfo.SubTotal</li>
+                            }
+                        }
+                    </ul>
+                    <h4>Итого: @order.Total</h4>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>

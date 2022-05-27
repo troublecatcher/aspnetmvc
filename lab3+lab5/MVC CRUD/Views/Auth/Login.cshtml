@@ -27,7 +27,7 @@
                 <div class="text-danger mb-3">@Accessor.HttpContext.Session.GetString("invalid")</div>
                 <div class="mb-3">
                     <input class="btn btn-success" asp-controller="Auth" asp-action="Enter" type="submit" value="Войти!" />
-                    <a class="btn btn-primary" href="@Url.Action("Register", "Auth")">Зарегистрироваться</a>
+                    <a class="btn btn-secondary" href="@Url.Action("Register", "Auth")">Зарегистрироваться</a>
                 </div>
             }
         </div>

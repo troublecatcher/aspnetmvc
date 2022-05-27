@@ -1,41 +1,9 @@
 ﻿<Properties StartupConfiguration="{B5DE07F1-543F-4BF5-A7EE-9981CF54FD8D}|Default">
-  <MonoDevelop.Ide.ItemProperties.main PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.calculator PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.WebStore.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.rsvp PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.trynumber9918 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.asdasd PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MVC CRUD/Models/Orders.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../.nuget/packages/bootstrap/5.1.3/contentFiles/any/any/wwwroot/css/bootstrap.css">
     <Files>
-      <File FileName="MVC CRUD/Controllers/CartController.cs" Line="18" Column="30" IsPinned="True" />
-      <File FileName="MVC CRUD/Controllers/HomeController.cs" Line="83" Column="13" IsPinned="True" />
-      <File FileName="MVC CRUD/Controllers/AuthController.cs" Line="33" Column="1" IsPinned="True" />
-      <File FileName="MVC CRUD/Models/OrdersInfo.cs" Line="20" Column="19" />
-      <File FileName="MVC CRUD/Models/Orders.cs" Line="6" Column="17" />
-      <File FileName="MVC CRUD/Program.cs" Line="9" Column="18" />
-      <File FileName="MVC CRUD/Models/Context.cs" Line="11" Column="51" />
-      <File FileName="MVC CRUD/Views/Home/Index.cshtml" Line="5" Column="37" />
-      <File FileName="rsvp/Views/RSVP/form.cshtml" Line="7" Column="30" />
-      <File FileName="MVC CRUD/Views/Shared/_Layout.cshtml" Line="16" Column="66" />
-      <File FileName="MVC CRUD/Views/Auth/Register.cshtml" Line="48" Column="50" />
-      <File FileName="MVC CRUD/appsettings.json" Line="10" Column="66" />
-      <File FileName="rsvp/Controllers/RSVPController.cs" Line="37" Column="9" />
-      <File FileName="rsvp/appsettings.json" Line="1" Column="1" />
-      <File FileName="MVC CRUD/Models/Login.cs" Line="10" Column="31" />
-      <File FileName="MVC CRUD/Controllers/CashoutController.cs" Line="25" Column="1" />
-      <File FileName="MVC CRUD/Views/Cashout/Index.cshtml" Line="41" Column="64" />
-      <File FileName="MVC CRUD/Views/Shared/Thankyou.cshtml" Line="7" Column="30" />
-      <File FileName="MVC CRUD/Models/Register.cs" Line="9" Column="14" />
-      <File FileName="MVC CRUD/Controllers/RegisterController.cs" Line="31" Column="1" />
-      <File FileName="MVC CRUD/Views/Register/Index.cshtml" Line="58" Column="57" />
-      <File FileName="MVC CRUD/Views/Auth/Login.cshtml" Line="27" Column="45" />
+      <File FileName="../../../../.nuget/packages/bootstrap/5.1.3/contentFiles/any/any/wwwroot/css/bootstrap.css" Line="4647" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -45,18 +13,27 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Auth" expanded="True" />
-                <Node name="Cart" expanded="True" />
-                <Node name="Cashout" expanded="True" />
-                <Node name="Home" expanded="True" />
+                <Node name="Checkout" expanded="True" />
+                <Node name="Item" expanded="True" />
+                <Node name="OrdersInfo" expanded="True" />
                 <Node name="Register" expanded="True" />
                 <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True">
+                  <Node name="bootstrap.css" expanded="True">
+                    <Node name="bootstrap.min.css" expanded="True" />
+                  </Node>
+                </Node>
               </Node>
             </Node>
             <Node name="rsvp" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="RSVP" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -67,4 +44,15 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.asdasd PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.rsvp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.trynumber9918 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.WebStore.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.main PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -286,3 +286,4 @@
 /Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/obj/Debug/net6.0/ref/main.dll
 /Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/obj/Debug/net6.0/main.pdb
 /Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/obj/Debug/net6.0/main.genruntimeconfig.cache
+/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/obj/Debug/net6.0/main.csproj.AssemblyReference.cache

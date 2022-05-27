@@ -46,7 +46,7 @@ namespace MVC_CRUD.Controllers
                     Title = item.Title,
                     Price = item.Price,
                     Quantity = item.Qty,
-                    SubTotal = total
+                    SubTotal = item.Qty * item.Price
                 };
                 _context.OrdersInfo.Add(info);
             }
@@ -61,8 +61,9 @@ namespace MVC_CRUD.Controllers
 
             }
             await _context.SaveChangesAsync();
-            return View("Thankyou");
             HttpContext.Session.Remove("cart");
+            HttpContext.Session.Remove("count");
+            return View("Thankyou");
         }
     }
 }

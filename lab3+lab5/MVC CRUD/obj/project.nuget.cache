@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "b6dpar0r30xuIReATkaKPNDRnjBUDcJmSHoOoPaD5fkb433PvC+Iu8cxQeg2w55ESTOPPN8/mAs3CG8UmenZGg==",
+  "dgSpecHash": "/CUzdMIbUKV7Z1YL07lfBbnbI9DbYi9Nhbpqm6kX3eZ/96SR8nI2uZUBD9ZdAmWb4dFADKoYWGlnwFJx6a5WWQ==",
   "success": true,
   "projectFilePath": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/main.csproj",
   "expectedPackageFiles": [
+    "/Users/anton/.nuget/packages/bootstrap/5.1.3/bootstrap.5.1.3.nupkg.sha512",
     "/Users/anton/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/anton/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/Users/anton/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",
