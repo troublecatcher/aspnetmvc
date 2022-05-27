@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor Accessor
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -9,57 +12,86 @@
     <link rel="stylesheet" href="~/MVC_CRUD.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Customers" asp-action="Index">Заказчики</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Orders" asp-action="Index">Заказы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Item" asp-action="Index">Товары</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Cart" asp-action="Index">Корзина
-                            </a>
-                        </li>
-                        @*<li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Master" asp-action="Index">Мастер-страница</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Master" asp-action="First">Страница 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Master" asp-action="Second">Страница 2</a>
-                        </li>*@
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    @{
+        if (Accessor.HttpContext.Session.GetInt32("logged") == 1)
+        {
+            <header>
+                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                                <ul class="navbar-nav flex-grow-1">
+                                    @{
+                                        if (Accessor.HttpContext.Session.GetInt32("isadmin") == 1)
+                                        {
+                                            <li class="nav-item">
+                                                <a class="nav-link text-dark" asp-area="" asp-controller="Register" asp-action="Index">Пользователи</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-dark" asp-area="" asp-controller="Orders" asp-action="Index">Заказы</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link text-dark" asp-area="" asp-controller="Item" asp-action="Index">Товары</a>
+                                            </li>
+                                        }
+                                    }
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" asp-area="" asp-controller="Cart" asp-action="Index">
+                                            @{
+                                                string s = "";
+                                                int? count = Accessor.HttpContext.Session.GetInt32("count");
+                                                if (count != null && count != 0)
+                                                    s = "(" + count + ")";
+                                            }
+                                            
+                                        Корзина @s</a>
+                                    </li>
+                                </ul>
+                            @{
+                                if (Accessor.HttpContext.Session.GetInt32("logged") == 1)
+                                {
+                                    <ul class="navbar-nav">
+                                        <li>
+                                            <p class="nav-link text-dark">Добро пожаловать, @Accessor.HttpContext.Session.GetString("user")!</p>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link text-dark" asp-controller="Auth" asp-action="Leave">Выйти</a>
+                                        </li>
+                                    </ul>
+                                }
+                            }
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        }
+    }
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    @*<footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - MVC_CRUD - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>*@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+
+
+
+
+@*<li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Master" asp-action="Index">Мастер-страница</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Master" asp-action="First">Страница 1</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Master" asp-action="Second">Страница 2</a>
+    </li>*@

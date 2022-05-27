@@ -21,6 +21,7 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,11 +31,16 @@
     <None Remove="Views\Cart\" />
     <None Remove="Newtonsoft.Json" />
     <None Remove="Views\Cashout\" />
+    <None Remove="Views\Orders\" />
+    <None Remove="Views\Auth\" />
+    <None Remove="Microsoft.AspNetCore.Session" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Master\" />
     <Folder Include="Views\Cart\" />
     <Folder Include="Views\Cashout\" />
+    <Folder Include="Views\Orders\" />
+    <Folder Include="Views\Auth\" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>

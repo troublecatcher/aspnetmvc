@@ -19,7 +19,9 @@ namespace MVC_CRUD.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            return _context.Items != null ?
+            if (HttpContext.Session.GetInt32("logged") != 1)
+                return RedirectToAction("Login","Auth");
+                return _context.Items != null ?
                           View(await _context.Items.ToListAsync()) :
                           Problem("Entity set 'Context.Customers'  is null.");
         }
@@ -35,8 +37,7 @@ namespace MVC_CRUD.Controllers
                     dbitem.Qty = qty;
                     li.Add(dbitem);
                     HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(li));
-                    //ViewBag.cart = li.Count;
-                    //HttpContext.Session.SetInt32("count", 1);
+                    HttpContext.Session.SetInt32("count", 1);
                 }
                 else
                 {
@@ -49,15 +50,15 @@ namespace MVC_CRUD.Controllers
                             if (item.Qty + qty > dbitem.Qty)
                                 return View("Sorry");
                             else item.Qty += qty;
+                            
                             HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(li));
                             return RedirectToAction("Index", "Home");
                         }
                     }
+                    HttpContext.Session.SetInt32("count", (int)HttpContext.Session.GetInt32("count") + 1);
                     dbitem.Qty = qty;
                     li.Add(dbitem);
                     HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(li));
-                    //ViewBag.cart = li.Count;
-                    //HttpContext.Session.SetInt32("count", (int)HttpContext.Session.GetInt32("count") + 1);
                 }
             }
             
@@ -70,6 +71,7 @@ namespace MVC_CRUD.Controllers
             foreach(var item in li.ToList())
                 if(item.ID == itemid)
                     li.RemoveAt(li.IndexOf(item));
+            HttpContext.Session.SetInt32("count", (int)HttpContext.Session.GetInt32("count") - 1);
             HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(li));
             return RedirectToAction("Index", "Cart");
         }

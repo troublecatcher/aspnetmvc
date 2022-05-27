@@ -15,32 +15,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Cashout/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FzaG91dC9JbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Customers/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0NyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Customers/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RlbGV0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Customers/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Customers/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0VkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Customers/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0luZGV4LmNzaHRtbA==
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Checkout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hlY2tvdXQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Home/Index.cshtml]
@@ -83,24 +71,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyL1NlY29uZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Orders/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0NyZWF0ZS5jc2h0bWw=
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Register/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0ZXIvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Orders/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0RlbGV0ZS5jc2h0bWw=
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Register/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0ZXIvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Orders/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0RldGFpbHMuY3NodG1s
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Register/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0ZXIvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Orders/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0VkaXQuY3NodG1s
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Register/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0ZXIvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Orders/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3JkZXJzL0luZGV4LmNzaHRtbA==
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0ZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Shared/Error.cshtml]
@@ -113,6 +101,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Shared/Sorry.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NvcnJ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Shared/Thankyou.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1RoYW5reW91LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
