@@ -44,7 +44,7 @@
                         }
                         <form method="post" name="@fname" action="@Url.Action("Update", "Home", new {itemid = item.ID})">
 
-                            <input onchange="update(@item.ID)" name="qty" type="number" value="@item.Qty" />
+                            <input class="form-control" onchange="update(@item.ID)" name="qty" type="number" value="@item.Qty" />
                         </form>
                     </td>
                     <td>

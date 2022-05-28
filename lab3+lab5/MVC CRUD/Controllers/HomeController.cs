@@ -29,6 +29,8 @@ namespace MVC_CRUD.Controllers
         {
             if(qty != 0)
             {
+                var i = await _context.Items.FirstOrDefaultAsync(i => i.ID == itemid);
+                if(qty > i.Qty) return View("Sorry");
                 var cart = HttpContext.Session.GetString("cart");
                 if (cart == null)
                 {
@@ -61,7 +63,6 @@ namespace MVC_CRUD.Controllers
                     HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(li));
                 }
             }
-            
             return RedirectToAction("Index", "Home");
         }
         public async Task<ActionResult> Remove(int itemid)

@@ -13,38 +13,38 @@
             {
                 @Html.ValidationSummary(true)
                 <div class="mb-3">
-                    Фамилия @Html.TextBoxFor(x => x.Surname)
+                    <input placeholder="Фамилия" class="form-control" type="text" asp-for=Surname />
                     <span asp-validation-for=Surname class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    Имя @Html.TextBoxFor(x => x.Name)
+                    <input placeholder="Имя" class="form-control" type="text" asp-for=Name />
                     <span asp-validation-for=Name class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    Отчество @Html.TextBoxFor(x => x.Patro)
+                    <input placeholder="Отчество" class="form-control" type="text" asp-for=Patro />
                     <span asp-validation-for=Patro class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    Телефон @Html.TextBoxFor(x => x.Phone)
+                    <input placeholder="Телефон" class="form-control" type="tel" asp-for=Phone />
                     <span asp-validation-for=Phone class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    Email @Html.TextBoxFor(x => x.Email)
+                    <input placeholder="Email" class="form-control" type="email" asp-for=Email />
                     <span asp-validation-for=Email class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    Пароль @Html.TextBoxFor(x => x.Password)
+                    <input placeholder="Пароль" class="form-control" type="password" asp-for=Password />
                     <span asp-validation-for=Password class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    Подтверждение пароля @Html.TextBoxFor(x => x.ConfirmPassword)
+                    <input placeholder="Подтверждение пароля" class="form-control" type="password" asp-for=ConfirmPassword />
                     <span asp-validation-for=ConfirmPassword class="text-danger"></span>
                 </div>
                 <div class="mb-3">
                     <input class="btn btn-success" asp-controller="Auth" asp-action="NewUser" type="submit" value="Зарегистрироваться!" />
                 </div>
                 <div class="mb-3">
-                     Уже есть аккаунт?
+                    Уже есть аккаунт?
                     <input class="btn btn-secondary" asp-controller="Auth" asp-action="Login" type="submit" value="Войти" />
                 </div>
             }

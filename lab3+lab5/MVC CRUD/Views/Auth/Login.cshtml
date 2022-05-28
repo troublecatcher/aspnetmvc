@@ -12,16 +12,14 @@
     <div class="row justify-content-center align-items-center">
         <div class="col-sm-12 col-md-12 col-lg-4">
             <h1>Вход</h1>
-            @using (Html.BeginForm())
-            {
+            <form>
                 @Html.ValidationSummary(true)
-                @*<form method="post" action="@Url.Action("Enter", "Auth")">*@
                 <div class="mb-3">
-                    Email @Html.TextBoxFor(x => x.Email)
+                    <input asp-for=Email type="email" class="form-control" placeholder="Email">
                     <span asp-validation-for=Email class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    Пароль @Html.TextBoxFor(x => x.Password)
+                    <input asp-for=Password type="password" class="form-control" placeholder="Пароль">
                     <span asp-validation-for=Password class="text-danger"></span>
                 </div>
                 <div class="text-danger mb-3">@Accessor.HttpContext.Session.GetString("invalid")</div>
@@ -29,7 +27,8 @@
                     <input class="btn btn-success" asp-controller="Auth" asp-action="Enter" type="submit" value="Войти!" />
                     <a class="btn btn-secondary" href="@Url.Action("Register", "Auth")">Зарегистрироваться</a>
                 </div>
-            }
+            </form>
+
         </div>
     </div>
 </div>
