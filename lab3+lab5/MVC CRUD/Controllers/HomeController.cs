@@ -21,9 +21,9 @@ namespace MVC_CRUD.Controllers
         {
             if (HttpContext.Session.GetInt32("logged") != 1)
                 return RedirectToAction("Login","Auth");
-                return _context.Items != null ?
-                          View(await _context.Items.ToListAsync()) :
-                          Problem("Entity set 'Context.Customers'  is null.");
+            return _context.Items != null ?
+                        View(await _context.Items.ToListAsync()) :
+                        Problem("Entity set 'Context.Customers'  is null.");
         }
         public async Task<ActionResult> Add(int itemid, int qty)
         {

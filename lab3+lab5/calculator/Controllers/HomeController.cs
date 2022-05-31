@@ -17,12 +17,24 @@ namespace calculator.Controllers
         {
             _logger = logger;
         }
+        public static double convert(String input)
+        {
+            input = input.Replace(',', '.');
+            int decimalSeperator = input.LastIndexOf('.');
+
+            if (decimalSeperator > -1)
+            {
+                input = input.Substring(0, decimalSeperator).Replace(".", "") + input.Substring(decimalSeperator);
+            }
+
+            return Convert.ToDouble(input);
+        }
         [HttpPost]
         public IActionResult Index(Calculator cal)
         {
             double a, b;
-            a = cal.v1;
-            b = cal.v2;
+            a = convert(cal.v1);
+            b = convert(cal.v2);
             switch (cal.action)
             {
                 case "+":
@@ -45,6 +57,7 @@ namespace calculator.Controllers
             }
             ViewData["result"] = cal.result;
             return View();
+
         }
         public IActionResult Index()
         {

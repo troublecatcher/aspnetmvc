@@ -19,17 +19,31 @@ namespace MVC_CRUD.Controllers
         }
         public IActionResult Index()
         {
+            if (HttpContext.Session.GetInt32("logged") != 1)
+                return RedirectToAction("Login", "Auth");
             return View(JsonConvert.DeserializeObject<IEnumerable<Item>>(HttpContext.Session.GetString("cart")));
         }
         public async Task<IActionResult> SaveOrder()
         {
-            var userID = (int)HttpContext.Session.GetInt32("userID");
             var cart = HttpContext.Session.GetString("cart");
             var li = JsonConvert.DeserializeObject<List<Item>>(cart);
+            var it = new Item();
+            foreach (var cartItem in li.ToList())
+            {
+                it = await _context.Items.FirstOrDefaultAsync(m => m.ID == cartItem.ID);
+                if (cartItem.Qty > it.Qty)
+                    {
+                        li.Remove(cartItem);
+                        HttpContext.Session.SetString("cart", JsonConvert.SerializeObject(li));
+                        HttpContext.Session.SetInt32("count", (int)HttpContext.Session.GetInt32("count") - 1);
+                        return View("Sorry");
+                    }
+            } 
             int total = 0;
             foreach (var item in li)
                 total += item.Qty * item.Price;
 
+            var userID = (int)HttpContext.Session.GetInt32("userID");
             Orders order = new()
             {
                 CustomerID = userID,
@@ -51,7 +65,7 @@ namespace MVC_CRUD.Controllers
                 _context.OrdersInfo.Add(info);
             }
 
-            //substracting stock qty upon ordering
+
             var dbli = await _context.Items.ToListAsync();
             foreach (var i in dbli)
             {

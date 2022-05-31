@@ -1,4 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Http
+@using System
 @inject IHttpContextAccessor Accessor
 @model IEnumerable<MVC_CRUD.Models.Item>
 @{
@@ -15,31 +16,37 @@
     </script>*@
 
 <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
         @foreach (var item in Model)
         {
-            <div class="card col text-center">
-                <div class="card-body">
-                    <h5 class="card-title">@item.Title</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">@item.Desc</li>
-                        <li class="list-group-item">@item.Price руб</li>
-                        <li class="list-group-item">@item.Qty шт</li>
-                    </ul>
-                    @if (item.Qty > 0)
-                    {
-                        <form method="post" action="@Url.Action("Add", "Home", new {itemid = item.ID})">
-                            <div class="input-group mb-3">
-                                <input name="qty" type="number" min="1" max="@item.Qty" class="form-control" placeholder="Количество" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                                <button class="btn btn-success" type="submit" id="button-addon1">В корзину</button>
-                            </div>
-                        </form>
+            <div class="col">
+                <div class="card text-center h-100">
+                    <div class="card-header">
+                        <img src="@("~/img/" + @item.ImageName)" asp-append-version="true" class="card-img-top" alt="@item.Title, @item.Desc">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">@item.Title</h4>
+                        <p>@item.Desc</p>
+                    </div>
+                    <div class="card-footer">
+                        <h5>@item.Price руб</h5>
+                        <hr />
+                        <h6>@item.Qty шт</h6>
+                        @if (item.Qty > 0)
+                        {
+                            <form method="post" action="@Url.Action("Add", "Home", new {itemid = item.ID})">
+                                <div class="input-group">
+                                    <input name="qty" type="number" min="1" max="@item.Qty" class="form-control" placeholder="Количество" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <button class="btn btn-success" type="submit" id="button-addon1">В корзину</button>
+                                </div>
+                            </form>
 
-                    }
-                    else
-                    {
-                        <button class="btn btn-danger" disabled>Раскупили...</button>
-                    }
+                        }
+                        else
+                        {
+                            <button class="btn btn-danger" disabled>Раскупили...</button>
+                        }
+                    </div>
                 </div>
             </div>
         }

@@ -24,21 +24,21 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                                <ul class="navbar-nav flex-grow-1">
-                                    @{
-                                        if (Accessor.HttpContext.Session.GetInt32("isadmin") == 1)
-                                        {
-                                            <li class="nav-item">
-                                                <a class="nav-link text-white" asp-area="" asp-controller="Register" asp-action="Index">Пользователи</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link text-white" asp-area="" asp-controller="OrdersInfo" asp-action="Index">Заказы</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link text-white" asp-area="" asp-controller="Item" asp-action="Index">Товары</a>
-                                            </li>
-                                        }
+                            <ul class="navbar-nav flex-grow-1">
+                                @{
+                                    if (Accessor.HttpContext.Session.GetInt32("isadmin") == 1)
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" asp-area="" asp-controller="Register" asp-action="Index">Пользователи</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" asp-area="" asp-controller="OrdersInfo" asp-action="Index">Заказы</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" asp-area="" asp-controller="Item" asp-action="Index">Товары</a>
+                                        </li>
                                     }
+                                }
                                 <li class="nav-item">
                                     <a class="nav-link text-white" asp-area="" asp-controller="Cart" asp-action="Index">
                                         @{
@@ -51,7 +51,7 @@
                                         <span class="badge text-bg-light rounded-pill">@s</span>
                                     </a>
                                 </li>
-                                </ul>
+                            </ul>
                             @{
                                 if (Accessor.HttpContext.Session.GetInt32("logged") == 1)
                                 {

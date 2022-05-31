@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MVC_CRUD.Models;
+using Newtonsoft.Json;
 
 namespace MVC_CRUD.Controllers
 {
@@ -18,6 +19,8 @@ namespace MVC_CRUD.Controllers
         }
         public IActionResult Login()
         {
+            if (HttpContext.Session.GetInt32("logged") == 1)
+                return RedirectToAction("Index", "Home");
             return View();
         }
         public async Task<IActionResult> Enter([Bind("Email,Password")] Login log)
@@ -36,7 +39,7 @@ namespace MVC_CRUD.Controllers
                         HttpContext.Session.SetInt32("userID", item.ID);
                         return RedirectToAction("Index", "Home");
                     }
-                    HttpContext.Session.SetString("invalid", "Логин или пароль неверный =(");
+                HttpContext.Session.SetString("invalid", "Логин или пароль неверный =(");
             }
             return View("Login", log);
         }
@@ -55,13 +58,15 @@ namespace MVC_CRUD.Controllers
                 HttpContext.Session.SetString("user", reg.Name);
                 HttpContext.Session.SetInt32("userID", reg.ID);
                 HttpContext.Session.SetInt32("logged", 1);
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Index", "Home");
             }
             return View("Register", reg);
         }
         [HttpGet]
         public IActionResult Register()
         {
+            if (HttpContext.Session.GetInt32("logged") == 1)
+                return RedirectToAction("Index", "Home");
             return View();
         }
     }

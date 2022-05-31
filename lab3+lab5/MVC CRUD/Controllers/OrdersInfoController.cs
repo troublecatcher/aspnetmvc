@@ -21,7 +21,9 @@ namespace MVC_CRUD.Controllers
         // GET: OrdersInfo
         public async Task<IActionResult> Index()
         {
-            if(_context.OrdersInfo == null)
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
+            if (_context.OrdersInfo == null)
                 return Problem("Entity set 'Context.OrdersInfo'  is null.");
             else
             {
@@ -36,6 +38,8 @@ namespace MVC_CRUD.Controllers
         // GET: OrdersInfo/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             if (id == null || _context.OrdersInfo == null)
             {
                 return NotFound();
@@ -54,6 +58,8 @@ namespace MVC_CRUD.Controllers
         // GET: OrdersInfo/Create
         public IActionResult Create()
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             return View();
         }
 
@@ -64,6 +70,8 @@ namespace MVC_CRUD.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,OrderID,Title,Price,Quantity,SubTotal")] OrdersInfo ordersInfo)
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             if (ModelState.IsValid)
             {
                 _context.Add(ordersInfo);
@@ -76,6 +84,8 @@ namespace MVC_CRUD.Controllers
         // GET: OrdersInfo/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             if (id == null || _context.OrdersInfo == null)
             {
                 return NotFound();
@@ -96,6 +106,8 @@ namespace MVC_CRUD.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,OrderID,Title,Price,Quantity,SubTotal")] OrdersInfo ordersInfo)
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             if (id != ordersInfo.ID)
             {
                 return NotFound();
@@ -127,6 +139,8 @@ namespace MVC_CRUD.Controllers
         // GET: OrdersInfo/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             if (id == null || _context.OrdersInfo == null)
             {
                 return NotFound();
@@ -147,6 +161,8 @@ namespace MVC_CRUD.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             if (_context.OrdersInfo == null)
             {
                 return Problem("Entity set 'Context.OrdersInfo'  is null.");

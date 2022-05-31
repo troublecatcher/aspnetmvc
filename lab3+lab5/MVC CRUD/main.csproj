@@ -39,6 +39,10 @@
     <Folder Include="Views\Master\" />
     <Folder Include="Views\Cart\" />
     <Folder Include="Views\Auth\" />
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\img\" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>

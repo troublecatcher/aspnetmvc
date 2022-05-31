@@ -15,6 +15,8 @@ namespace MVC_CRUD.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+            if (HttpContext.Session.GetInt32("logged") != 1)
+                return RedirectToAction("Login", "Auth");
             var fuckmylife = HttpContext.Session.GetString("cart");
             if (fuckmylife == null)
                 return View();

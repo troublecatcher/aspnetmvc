@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MVC_CRUD.Models;
+using MVC_CRUD.Controllers;
 
 namespace MVC_CRUD.Controllers
 {
@@ -21,7 +22,9 @@ namespace MVC_CRUD.Controllers
         // GET: Register
         public async Task<IActionResult> Index()
         {
-              return _context.Registers != null ? 
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
+            return _context.Registers != null ? 
                           View(await _context.Registers.ToListAsync()) :
                           Problem("Entity set 'Context.Registers'  is null.");
         }
@@ -29,6 +32,8 @@ namespace MVC_CRUD.Controllers
         // GET: Register/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             if (id == null || _context.Registers == null)
             {
                 return NotFound();
@@ -47,6 +52,8 @@ namespace MVC_CRUD.Controllers
         // GET: Register/Create
         public IActionResult Create()
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             return View();
         }
 
@@ -57,6 +64,8 @@ namespace MVC_CRUD.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Surname,Name,Patro,Phone,Email,Password,ConfirmPassword,IsAdmin")] Register register)
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             if (ModelState.IsValid)
             {
                 _context.Add(register);
@@ -69,6 +78,8 @@ namespace MVC_CRUD.Controllers
         // GET: Register/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             if (id == null || _context.Registers == null)
             {
                 return NotFound();
@@ -89,6 +100,8 @@ namespace MVC_CRUD.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Surname,Name,Patro,Phone,Email,Password,ConfirmPassword,IsAdmin")] Register register)
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             if (id != register.ID)
             {
                 return NotFound();
@@ -120,6 +133,8 @@ namespace MVC_CRUD.Controllers
         // GET: Register/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             if (id == null || _context.Registers == null)
             {
                 return NotFound();
@@ -140,6 +155,8 @@ namespace MVC_CRUD.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            if (HttpContext.Session.GetInt32("logged") != 1 || HttpContext.Session.GetInt32("isadmin") != 1)
+                return RedirectToAction("Login", "Auth");
             if (_context.Registers == null)
             {
                 return Problem("Entity set 'Context.Registers'  is null.");

@@ -24,6 +24,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Qty)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageName)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -43,12 +46,14 @@
                 @Html.DisplayFor(modelItem => item.Qty)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.ImageName)
+            </td>
+            <td>
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning">Редактировать</a>
                     <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-secondary">Информация</a>
                     <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">Удалить</a>
                 </div>
-                
             </td>
         </tr>
 }

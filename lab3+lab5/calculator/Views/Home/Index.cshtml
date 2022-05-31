@@ -3,18 +3,27 @@
     ViewData["Title"] = "Home Page";
 }
 
-<form asp-action="Index" name="calc">
-    <div class="text-center">
-        <h1 class="display-4">Calculator</h1>
-        <input type="number" asp-for="v1" />
-        <select id="options" asp-for="action">
-            <option>+</option>
-            <option>-</option>
-            <option>*</option>
-            <option>/</option>
-        </select>
-        <input type="number" asp-for="v2" />
-        <input type="submit" value="Посчитать" />
-        <p><input asp-for="@ViewData["result"]" /></p>
-    </div>
-</form>
+
+<div class="card text-center" style="width: 40%; margin: 0 auto">
+    <form asp-action="Index" name="calc">
+        <div class="card-header">
+            <h3 class="display-4">Calculator</h3>
+        </div>
+        <div class="card-body">
+            <div class="input-group mb-3">
+                <input type="text" asp-for="v1" class="form-control" />
+                <select id="options" asp-for="action" class="form-select">
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                </select>
+                <input type="text" asp-for="v2" class="form-control" />
+            </div>
+            <input class="btn btn-success" type="submit" value="Посчитать" class="form-control" />
+        </div>
+        <div class="card-footer">
+            <input disabled asp-for="@ViewData["result"]" class="form-control" />
+        </div>
+    </form>
+</div>

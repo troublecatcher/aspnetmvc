@@ -73,3 +73,29 @@
 }
     </tbody>
 </table>
+<button id="button" class="btn btn-dark">Показать заказчиков через сервис</button>
+<script>const button = document.getElementById('button');
+
+        button.addEventListener('click', async function () {
+            try {
+                let res = await fetch('../api/registerapi');
+                let data = await res.json();
+                let table = document.createElement('table');
+                table.classList.add('table');
+                button.after(table);
+                let tbody = document.createElement('tbody');
+                table.append(tbody);
+                for (let item of data) {
+                    let tr = document.createElement('tr');
+                    tbody.appendChild(tr);
+                    for (let key in item) {
+                        let td = document.createElement('td');
+                        td.textContent = item[key];
+                        tr.append(td);
+                    }
+                }
+            }
+            catch (err) {
+                console.log(err);
+            }
+        });</script>
