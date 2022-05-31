@@ -1,12 +1,31 @@
 ﻿<Properties StartupConfiguration="{B5DE07F1-543F-4BF5-A7EE-9981CF54FD8D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="calculator/Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MVC CRUD/Views/OrdersInfo/Index.cshtml">
     <Files>
-      <File FileName="calculator/Controllers/HomeController.cs" Line="30" Column="1" />
+      <File FileName="MVC CRUD/Controllers/CheckoutController.cs" Line="61" Column="38" />
+      <File FileName="MVC CRUD/Views/Shared/Thankyou.cshtml" Line="1" Column="1" />
+      <File FileName="MVC CRUD/Views/Item/Index.cshtml" Line="1" Column="1" />
+      <File FileName="MVC CRUD/Controllers/ItemController.cs" Line="182" Column="63" />
+      <File FileName="MVC CRUD/Controllers/OrdersInfoController.cs" Line="164" Column="63" />
+      <File FileName="MVC CRUD/Controllers/RegisterController.cs" Line="158" Column="63" />
+      <File FileName="MVC CRUD/Controllers/RegisterAPIController.cs" Line="23" Column="18" />
+      <File FileName="MVC CRUD/Views/OrdersInfo/Index.cshtml" Line="26" Column="103" />
+      <File FileName="MVC CRUD/Models/OrdersInfo.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="App" expanded="True" />
+          <Node name="App" expanded="True">
+            <Node name="main" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Cart" expanded="True" />
+                <Node name="Item" expanded="True" />
+                <Node name="OrdersInfo" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
@@ -14,19 +33,19 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.asdasd PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.rsvp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.calculator PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.main PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WebStore.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/Controllers/RegisterAPIController.cs" relfile="MVC CRUD/Controllers/RegisterAPIController.cs" line="25" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.calculator PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.main PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.asdasd PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.WebStore.WebUI PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.trynumber9918 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.rsvp PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

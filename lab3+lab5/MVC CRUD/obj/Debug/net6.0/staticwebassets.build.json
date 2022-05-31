@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "s19fNwhkjBQMEfw5sLNSRmoyHpkQG7UADXp4/xAmTk0=",
+  "Hash": "CuhgVIe+fP5whCHLBZQ/RMRE+BHt1P7YMKaIyyEVqCc=",
   "Source": "main",
   "BasePath": "_content/main",
   "Mode": "Default",
@@ -882,6 +882,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/img/221353929"
+    },
+    {
+      "Identity": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/wwwroot/img/apple-airpods-pro-Беспроводные-наушники222004061.jpg",
+      "SourceId": "main",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/wwwroot/",
+      "BasePath": "_content/main",
+      "RelativePath": "img/apple-airpods-pro-Беспроводные-наушники222004061.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/apple-airpods-pro-Беспроводные-наушники222004061.jpg"
     },
     {
       "Identity": "/Users/anton/Documents/GitHub/brovko/lab3+lab5/MVC CRUD/wwwroot/img/cdn.svyaznoy-1221248541222112316.jpg",

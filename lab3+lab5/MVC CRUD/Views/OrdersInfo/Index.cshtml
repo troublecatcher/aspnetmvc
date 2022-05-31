@@ -23,7 +23,10 @@
                         {
                             if (order.ID == orderinfo.OrderID)
                             {
-                                <li class="list-group-item sub-item">@orderinfo.Title, @orderinfo.Quantity шт × @orderinfo.Price руб = @orderinfo.SubTotal руб</li>
+                                <li class="list-group-item sub-item">
+                                    <h6>@orderinfo.Title, @orderinfo.Desc</h6>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;@orderinfo.Quantity шт × @orderinfo.Price руб = @orderinfo.SubTotal руб</p>
+                                </li>
                             }
                         }
                     </ul>

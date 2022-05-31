@@ -58,6 +58,7 @@ namespace MVC_CRUD.Controllers
                 {
                     OrderID = _context.Orders.Max(x => x.ID),
                     Title = item.Title,
+                    Desc = item.Desc,
                     Price = item.Price,
                     Quantity = item.Qty,
                     SubTotal = item.Qty * item.Price
